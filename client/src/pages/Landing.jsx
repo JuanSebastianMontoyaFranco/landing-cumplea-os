@@ -156,19 +156,15 @@ const Landing = () => {
                                     alt="Descripción 1"
                                 />
                             </div>
-                            <img
-                                style={{
-                                    width: '60%', // Cambiar tamaño de la imagen
-                                    maxWidth: '300px', // Tamaño máximo de la imagen
-                                    margin: '0 auto 15px', // Centrar la imagen y añadir margen inferior
-                                    display: 'block',
-                                    borderRadius: '10px',
-                                }}
-                                src={guestTitle}
-                                alt="Descripción 1"
-                            />
-                            <div className="guests-number letter">
-                                {guestsNumber}
+                            <div className="guests-counter">
+                                <img
+                                    src={guestTitle}
+                                    alt="Descripción 1"
+                                    className="guests-counter__art"
+                                />
+                                <div className="guests-counter__value letter">
+                                    {guestsNumber}
+                                </div>
                             </div>
                         </Col>
                     </Row>

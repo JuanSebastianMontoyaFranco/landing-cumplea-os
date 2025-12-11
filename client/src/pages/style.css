@@ -108,86 +108,36 @@
 
 
 
-.guests-number {
+.guests-counter {
+  position: relative;
+  width: min(340px, 80%);
+  margin: 0 auto 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.guests-counter__art {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.guests-counter__value {
   position: absolute;
-  top: 28%; 
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 2rem;
+  background: radial-gradient(circle, #fff9f9 0%, #f3dffb 70%, #e7c8f3 100%);
+  color: #6a1b9a;
   font-weight: bold;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 5px;
-  z-index: 1;
-}
-
-@media (max-width: 360px) {
-  .guests-number {
-      top: 27%; 
-      font-size: 1.2rem; 
-  }
-}
-
-@media (min-width: 361px) and (max-width: 414px) {
-  .guests-number {
-      top: 22%;
-      font-size: 2rem;
-  }
-}
-
-@media (min-width: 415px) and (max-width: 480px) {
-  .guests-number {
-      top: 23%;
-      font-size: 2rem;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 540px) {
-  .guests-number {
-      top: 15%;
-      font-size: 2rem;
-  }
-}
-
-@media (min-width: 541px) and (max-width: 600px) {
-  .guests-number {
-      top: 20%;
-      font-size: 2.2rem;
-  }
-}
-
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .guests-number {
-      top: 30%; 
-      font-size: 2.5rem; 
-  }
-}
-
-@media (min-width: 1025px) and (max-width: 1366px) {
-  .guests-number {
-      top: 30%;
-      font-size: 2.8rem;
-  }
-}
-
-@media (min-width: 1367px) and (max-width: 1920px) {
-  .guests-number {
-      top: 32%;
-      font-size: 3rem;
-  }
-}
-
-@media (min-width: 1921px) and (max-width: 2560px) {
-  .guests-number {
-      top: 27%;
-      font-size: 4rem;
-  }
-}
-
-@media (min-width: 2561px) {
-  .guests-number {
-      top: 17%;
-      font-size: 4.5rem;
-  }
+  font-size: clamp(1.8rem, 4vw, 3.5rem);
+  width: clamp(48px, 11vw, 98px);
+  height: clamp(48px, 11vw, 98px);
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 25px rgba(106, 27, 154, 0.25);
+  border: 3px solid rgba(106, 27, 154, 0.15);
 }
